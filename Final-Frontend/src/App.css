@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Reem Kufi", sans-serif !important;
+}
+img {
+  max-width: 100%;
+  
+ object-fit: cover;
+}
+.App {
+  min-height: 100vh;
+  width: 85vw;
+  max-width: 1900px;
+  margin: 0rem auto;
+}
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+body {
+  background-color: #f6f6f6;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90px;
+}
+
+.navbar-menu-container {
+  display: none;
+}
+.navbar-links-container a {
+  margin-right: 3rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 700px !important;
+  gap: 10px;
+}
+
+.navbar-links-container {
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis if text overflows */
+}
+
+.navbar-logo{
+  height: 50px;
+  width: 200px;
+  padding-left: 20px;
+}
+.primary-button {
+  padding: 0.9rem 1.75rem;
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+.dark-button {
+  background-color: #343a40; 
+  color: #fff; 
+}
+.navbar-cart-icon {
+  font-size: 1.15rem;
+  height: 100px;
+  width: 25px;
+  position: relative;
+
+}
+
+
+.primary-button:hover {
+  background-color: rgb(234, 234, 234);
+}
+.navbar-menu-container svg {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.home-banner-container {
+  position: relative;
+  display: flex;
+  padding-top: 3rem;
+}
+.home-bannerImage-container {
+  position: absolute;
+  top: -100px;
+  right: -170px;
+  z-index: -2;
+  max-width: 700px;
+}
+.home-image-section {
+  max-width: 600px;
+  flex: 1;
+}
+.home-image-container img {
+  border-radius: 50%;
+  width: 500px; 
+  height: 500px; 
+  object-fit: cover;
+  padding-right: 20px;
+  margin-right: 60px;
+}
+.home-text-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+.primary-heading {
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: #4c4c4c;
+  /* line-height: 5rem; */
+  max-width: 600px;
+}
+.primary-text {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  max-width: 500px;
+  color: #6a6a6a;
+  margin: 1.5rem 0rem;
+}
+.secondary-button {
+  padding: 1rem 2.5rem;
+  background-color: #fe9e0d;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  transition: 0.2s;
+
+  align-items: center;
+  justify-content: center;
+}
+.secondary-button svg {
+  margin-left: 0.75rem;
+  font-size: 1.5rem;
+}
+.secondary-button:hover {
+  background-color: #e48f0f;
+}
+.primary-subheading {
+  font-weight: 700;
+  color: #fe9e0d;
+  font-size: 1.15rem;
+}
+
+
+
+
+
+
+.user-section {
+  display: flex;
+
+}
+
+.user-name {
+  padding: 1rem 2.5rem;
+  background-color: #fe9e0d;
+  border: none;
+  border-radius: 3rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  margin-right: 1rem; 
+
+}
+.user-name:hover {
+  background-color: #e48f0f;
+}
+.user-name {
+  max-width: 160px;
+  
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #410a28;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 24%; 
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+}
+
+.image-containers {
+  display: flex;
+  justify-content: center; /* Centers the image */
+  margin-bottom: 10px; /* Adds spacing between the image and the next element */
+}
+
+.item-image {
+  width: 100%;
+  max-width: 250px !important; /* Ensures image width is capped */
+  max-height: 120px !important; /* Restrict height */
+  height: auto !important;
+  object-fit: cover !important; /* Maintains aspect ratio without stretching */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds subtle shadow for better appearance */
+  transition: transform 0.3s;
+  margin: 5px 0 10px 0px; /* Adjusted margin to provide spacing at the top and bottom */
+}
+
+.item-name {
+  margin-top: 10px !important;
+  text-align: center !important;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  white-space: nowrap; /* Prevents the name from wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adds ellipsis if the name is too long */
+}
+
+.description-container {
+  margin-top: 10px !important;
+  text-align: center !important;
+  max-width: 80%;
+  max-height: 150px;
+  margin-left: 10%;
+  white-space: normal; /* Allows text to wrap */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adds ellipsis to truncate overflow */
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limits the description to 3 lines */
+  -webkit-box-orient: vertical;
+}
+
+
+
+/* .navbar-cart-icon-container {
+  position: relative;
+}
+
+.navbar-cart-icon {
+  font-size: 24px;
+  color: #000;
+} */
+
+.navbar-cart-icon-container {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  /* top: -8px;   */
+  right: 10px; 
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 4px;
+  font-size: 10px;
+  font-weight: bold;
+  margin-right: 245px;
+  margin-top: 25px;
+}
+
+
+
+
+
+@media (max-width: 1000px) {
+  .navbar-links-container a {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+  .primary-button {
+    font-size: 1rem;
+  }
+  .home-bannerImage-container {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-logo-container {
+    max-width: 140px;
+  }
+  .navbar-links-container {
+    display: none;
+  }
+  .navbar-menu-container {
+    display: flex;
+  }
+  .home-bannerImage-container {
+    max-width: 450px;
+  }
+  .home-banner-container,
+  .about-section-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-section-container {
+    flex-direction: column;
+  }
+  .home-image-section,
+  .about-section-image-container {
+    width: 100%;
+    max-width: 400px;
+  }
+  .primary-heading {
+    text-align: center;
+    max-width: 90%;
+  }
+  .primary-text {
+    text-align: center;
+    max-width: 80%;
+  }
+  .home-text-section,
+  .about-section-text-container {
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  .secondary-button {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+  }
+  .about-section-container {
+    margin-top: 5rem !important;
+  }
+  .about-buttons-container {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .primary-subheading {
+    text-align: center;
+  }
+  .watch-video-button {
+    margin-left: 0rem !important;
+    margin-top: 1rem;
+    font-size: 1rem !important;
+  }
+  .watch-video-button svg {
+    margin-right: 0.5rem !important;
+  }
+  .about-section-image-container {
+    margin-right: 0rem !important;
+  }
+  .work-section-wrapper {
+    margin-top: 5rem !important;
+  }
+  .work-section-bottom {
+    margin-top: 1rem !important;
+  }
+  .contact-form-container {
+    padding: 0.5rem !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem !important;
+  }
+  .contact-form-container input {
+    font-size: 1rem !important;
+    max-width: 100%;
+    padding: 0.5rem 1rem !important;
+    margin-bottom: 0.8rem !important;
+    text-align: center;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+  }
+  .footer-section-two {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .footer-section-columns {
+    margin: 1rem 0rem;
+  }
+  .App {
+    max-width: 95vw;
+  }
+}
+@media (max-width: 600px) {
+  .home-bannerImage-container,
+  .about-background-image-container {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .App {
+    max-width: 95vw;
+  }
+}
+
+

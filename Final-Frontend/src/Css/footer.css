@@ -1,0 +1,48 @@
+.footer1{
+    height: 120px;
+    display: flex;
+    background-color: aliceblue;
+    padding-left: 30px;
+    justify-content: center;
+}
+.image{
+    height: 90px;
+    padding-top: 30px;
+    padding-right: 70px;
+}
+
+.images{
+    height: 60px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+.text1{
+    margin-top: 20px;
+    padding-right: 150px;
+    
+}
+.footer2{
+    background-color: white;
+    height: 550px;
+    display: flex;
+    color: black;
+}
+.rows{
+   padding-left: 270px;
+}
+.rows1{
+    padding-left: 120px;
+}
+.rows2{
+    padding-top: 35px;
+}
+
+.about1{
+    color: black;
+    text-decoration: none !important;
+    
+}
+.links{
+    color: black;
+    
+}

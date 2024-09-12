@@ -1,0 +1,12 @@
+
+.buttons .btn {
+    transition: background-color 0.3s, color 0.3s;
+    border:  30px solid yellow;
+    
+  }
+
+  .buttons .btn:hover {
+    background-color:#ffa300;
+    color: #fff; 
+  }
+  

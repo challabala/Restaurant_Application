@@ -1,0 +1,12 @@
+.lcontainer{
+    background-image: url("https://cdn.pixabay.com/photo/2014/06/11/17/00/food-366875_640.jpg");
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+
+}
+.card{
+    padding-top: 40px;
+    backdrop-filter: blur(20px);
+
+}

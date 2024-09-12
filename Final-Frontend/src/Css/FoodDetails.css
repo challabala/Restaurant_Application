@@ -1,0 +1,112 @@
+.food-display{
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255);
+}
+.food-display h2{
+    font-size: max(2vw,24px);
+    font-weight: 600;
+}
+.food-display-list{
+ 
+    
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+    margin-top:30px;
+    gap:30px;
+    row-gap:50px;
+}
+
+
+
+
+.food-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adjust as needed */
+    justify-content: center; /* Centers items horizontally */
+    width: 300px;
+    max-width: 400px;
+  }
+
+.food-item-img {
+    width: 100%; 
+    max-width: 250px !important;
+    max-height: 120px !important; 
+    height: auto !important; 
+    object-fit: cover !important; 
+    /* border-radius: 1rem;  */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s; 
+    margin-left: 5px !important;
+    margin-top: 5px !important;
+  }
+.food-item-info{
+    padding:10px;
+}
+.food-item-img-rating{
+    margin-top: -15px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    /* padding-left: 5px; */
+}
+.food-item-name-rating p{
+  
+    font-size:20px;
+    font-weight:500;
+   
+}
+.food-item-name{
+  font-family:Georgia, serif;
+  margin-top: 5px;
+  text-align: center;
+  font-weight: bold;
+
+}
+.food-rating{
+    color: orange!important;
+    align-items: center;
+    margin-left: 10px;
+}
+.food-item-desc{
+    margin-top: -5px;
+    color:#676767;
+    font-size:12px;
+}
+.food-item-price{
+    color:red;
+    font-size: 22px;
+    font-weight: 500;
+    margin:10px 0px;
+    margin-right: 60px;
+}
+
+.food-item-img-container {
+    flex-shrink: 0;
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+    margin-right: 10px;
+    /* margin-top: 20px; */
+}
+
+.food-item-cart{
+    display:flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    
+}
+.cart-button{
+    background-color: white;
+    height: 29px;
+    width: 120px;
+    border:2px solid #ffa300;
+    border-radius:20px;
+}
+.cart-button:hover {
+    background-color:#ffa300 ;
+    color:white;
+    height:38px;
+    border:2px solid #ffa300 ;
+
+  }

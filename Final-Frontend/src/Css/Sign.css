@@ -1,0 +1,13 @@
+.scontainer{
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/05/12/33/flat-lay-2583213_640.jpg");
+    position: relative;
+    background-size: cover;
+
+}
+.card{
+    backdrop-filter: blur(8px);
+
+}
+/**{
+    color: black;
+}*/
